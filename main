@@ -1,0 +1,15 @@
+class AvrList:
+    def __init__(self, data):
+        self.data = data
+        self.__avrsum(data)
+    def avrsum(self, data):
+        x = sum(data)/len(data)
+        if x<6:
+            print "Low Average"
+        elif 6<= x <= 12:
+            print "Medium Average"
+        else:
+            print "High Average"
+    __avrsum = avrsum
+
+
